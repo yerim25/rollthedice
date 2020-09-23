@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+body {
+    background-color: #f1f2f6;
+}
+
+.container {
+  width: 350px;
+  padding: 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bungee", cursive;
+  color: #2c3e50;
+}
+
+#player1,
+#player2 {
+  background-color: #95a5a6;
+  padding: 10px;
+}
+
+#player1 {
+  float: left;
+}
+
+#player2 {
+  float: right;
+}
+
+.dice {
+  padding: 4px;
+  background-color: #ecf0f1;
+  width: 104px;
+  height: 104px;
+  border-radius: 10%;
+}
+
+.dot {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #34495e;
+}
+
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.third-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-face .dot:nth-of-type(2) {
+  align-self: center;
+}
+
+.third-face .dot:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.fourth-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-face .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fifth-face .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+.sixth-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sixth-face .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dice {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
